@@ -5,7 +5,7 @@ import "sync"
 const numProducers = 3
 
 func main() {
-	sharedChan := make(chan int, 15)
+	sharedChan := make(chan int)
 	done := make(chan struct{})
 	var wg sync.WaitGroup
 
