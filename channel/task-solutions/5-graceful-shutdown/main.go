@@ -43,7 +43,7 @@ func main() {
 		}
 	}()
 
-	time.Sleep(5 * time.Second)
+	time.Sleep(3600 * time.Second)
 	close(done)
 
 	// give goroutines time to exit (learning-only)
